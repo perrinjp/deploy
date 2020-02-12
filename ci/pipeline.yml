@@ -39,8 +39,10 @@ jobs:
             tag: 8
         inputs:
         - name: source-code-from-github
+        - name: resource-gist
         outputs:
         - name: jar-file
+        - name: resource-gist
         caches:
         - path: source-code-from-github/.m2
         run:
