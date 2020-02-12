@@ -1,0 +1,61 @@
+resources:
+- name: source-code-from-github
+  type: git
+  source:
+    uri: https://github.com/perrinjp/deploy
+    branch: dev
+
+- name: resource-gist
+  type: git
+  source:
+    branch: master
+    uri: ((gist-uri))
+    private_key: ((gist-private_key))
+      
+- name: deploy-web-app
+  type: cf
+  source:
+    api: ((cf-api))
+    username: ((cf-username))
+    password: ((cf-password))
+    organization: ((cf-organization))
+    space: ((cf-space))
+    skip_cert_check: true
+
+jobs:
+- name: test-and-build
+  public: true
+  plan:
+    - get: source-code-from-github
+      trigger: true
+    - get: resource-gist
+    - task: run-test-and-build-jar-file
+      config:
+        platform: linux
+        image_resource:
+          type: docker-image
+          source:
+            repository: java
+            tag: 8
+        inputs:
+        - name: source-code-from-github
+        outputs:
+        - name: jar-file
+        caches:
+        - path: source-code-from-github/.m2
+        run:
+          path: ./source-code-from-github/ci/test-and-build.sh
+    - put: resource-gist
+      params:
+        file: jar-file/*.jar
+
+- name: deploy-app-to-pcf
+  public: true
+  plan:
+  - get: resource-gist
+    passed: [test-and-build]
+    trigger: true
+  - get: source-code-from-github
+  - put: deploy-web-app
+    params:
+      manifest: source-code-from-github/ci/manifest.yml
