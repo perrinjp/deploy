@@ -4,7 +4,7 @@ set -e -u -
 cd source-code-from-github/
 ./mvnw clean package
 
-cp -rf code/target/springboot-concourse-0.0.5-SNAPSHOT.jar ../resource-gist/springboot-concourse-0.0.5-SNAPSHOT.jar
+cp -rf target/springboot-concourse-0.0.5-SNAPSHOT.jar resource-gist/springboot-concourse-0.0.5-SNAPSHOT.jar
 cd ../resource-gist
 git config --global user.email "jeanpaul.perrin@cgi.com"
 git config --global user.name "JPP"
