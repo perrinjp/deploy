@@ -1,6 +1,6 @@
 name: springbootConcourseApp
 path: ../../resource-gist/springboot-concourse-0.0.5-SNAPSHOT.jar
 buildpck: https://github.com/cloudfoundry/java-buildpack.git
-memory: 512M
+memory: 1G
 env:
   spring_application_name: springboot-concourse
