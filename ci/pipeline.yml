@@ -47,7 +47,8 @@ jobs:
           path: ./source-code-from-github/ci/test-and-build.sh
     - put: resource-gist
       params:
-        file: jar-file/*.jar
+        repository: resource-gist
+
 
 - name: deploy-app-to-pcf
   public: true
