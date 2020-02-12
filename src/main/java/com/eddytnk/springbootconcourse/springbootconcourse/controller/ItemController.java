@@ -15,7 +15,7 @@ public class ItemController {
 
     @GetMapping("/")
     String sayHello(){
-        return "Hello World!";
+        return "Hello JPP!";
     }
 
     @Autowired
