@@ -9,7 +9,7 @@ resources:
   type: git
   source:
     branch: master
-    uri: ((gist-uri))
+    uri: ((gist-uri-deploy))
     private_key: ((gist-private_key))
       
 - name: deploy-web-app
