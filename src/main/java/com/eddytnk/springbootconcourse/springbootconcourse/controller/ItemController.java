@@ -30,8 +30,8 @@ public class ItemController {
 "<html>" + "\n" +
 "<body>" + "\n" +
 "<h1>Well done ! JPP</h1>" + "\n" +
-"<canvas id=\"canvas\" width=\"400\" height=\"400\"" + "\n" +
-"style=\"background-color:#333\">" + "\n" +
+"<canvas id=\"canvas\" width=\"600\" height=\"600\"" + "\n" +
+"style=\"background-color:#833\">" + "\n" +
 "</canvas>" + "\n" +
 
 "<script>" + "\n" +
