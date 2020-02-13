@@ -15,6 +15,17 @@ public class ItemController {
 
     @GetMapping("/")
     String sayHello(){
+    	return "<html>" + "\r\n" + 
+			"<body>" + "\r\n" + 
+			"<h1>Well done ! JPP</h1>" + "\r\n" +  
+			"<script>" + "\r\n" +
+			"</script>" + "\r\n" +
+			"</body>" + "\r\n" +
+			"</html>" ;
+    }
+	
+    @GetMapping("/clock")
+    String displayClock(){
         return "<!DOCTYPE html>" + "\n" + 
 "<html>" + "\n" +
 "<body>" + "\n" +
