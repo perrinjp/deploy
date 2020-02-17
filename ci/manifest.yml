@@ -1,6 +1,6 @@
-name: springbootConcourseApp
-path: ../../resource-gist/springboot-concourse-0.0.5-SNAPSHOT.jar
+name: tutorialApp
+path: ../../resource-gist/springboot-concourse-tutorial-0.0.5-SNAPSHOT.jar
 buildpck: https://github.com/cloudfoundry/java-buildpack.git
 memory: 1G
 env:
-  spring_application_name: springboot-concourse
+  spring_application_name: springboot-concourse-tutorial
