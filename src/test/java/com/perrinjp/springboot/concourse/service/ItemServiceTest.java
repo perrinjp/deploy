@@ -1,12 +1,16 @@
-package com.eddytnk.springbootconcourse.springbootconcourse.service;
+package com.perrinjp.springboot.concourse.service;
 
-import com.eddytnk.springbootconcourse.springbootconcourse.model.Item;
-import com.eddytnk.springbootconcourse.springbootconcourse.repository.ItemRepository;
+
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+
+import com.perrinjp.tutorial.model.Item;
+import com.perrinjp.tutorial.repository.ItemRepository;
+import com.perrinjp.tutorial.service.ItemService;
 
 import java.util.Arrays;
 import java.util.List;

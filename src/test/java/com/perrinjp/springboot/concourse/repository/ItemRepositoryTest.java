@@ -1,7 +1,11 @@
-package com.eddytnk.springbootconcourse.springbootconcourse.repository;
+package com.perrinjp.springboot.concourse.repository;
 
-import com.eddytnk.springbootconcourse.springbootconcourse.model.Item;
+
+
 import org.junit.Test;
+
+import com.perrinjp.tutorial.model.Item;
+import com.perrinjp.tutorial.repository.ItemRepository;
 
 import java.util.List;
 

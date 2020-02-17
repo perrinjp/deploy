@@ -1,8 +1,10 @@
-package com.eddytnk.springbootconcourse.springbootconcourse.model;
+package com.perrinjp.springboot.concourse.model;
 
 
 import org.junit.Before;
 import org.junit.Test;
+
+import com.perrinjp.tutorial.model.Item;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 

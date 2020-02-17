@@ -1,7 +1,9 @@
-package com.eddytnk.springbootconcourse.springbootconcourse.repository;
+package com.perrinjp.tutorial.repository;
 
-import com.eddytnk.springbootconcourse.springbootconcourse.model.Item;
+
 import org.springframework.stereotype.Repository;
+
+import com.perrinjp.tutorial.model.Item;
 
 import java.util.Arrays;
 import java.util.List;

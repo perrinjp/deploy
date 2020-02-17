@@ -1,9 +1,11 @@
-package com.eddytnk.springbootconcourse.springbootconcourse.service;
+package com.perrinjp.tutorial.service;
 
-import com.eddytnk.springbootconcourse.springbootconcourse.model.Item;
-import com.eddytnk.springbootconcourse.springbootconcourse.repository.ItemRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.perrinjp.tutorial.model.Item;
+import com.perrinjp.tutorial.repository.ItemRepository;
 
 import java.util.List;
 

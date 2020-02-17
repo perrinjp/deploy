@@ -1,4 +1,4 @@
-package com.eddytnk.springbootconcourse.springbootconcourse.model;
+package com.perrinjp.tutorial.model;
 
 import java.util.Objects;
 

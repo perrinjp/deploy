@@ -1,10 +1,13 @@
-package com.eddytnk.springbootconcourse.springbootconcourse.controller;
+package com.perrinjp.springboot.concourse.controller;
 
 
-import com.eddytnk.springbootconcourse.springbootconcourse.model.Item;
-import com.eddytnk.springbootconcourse.springbootconcourse.service.ItemService;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.perrinjp.tutorial.controller.ItemController;
+import com.perrinjp.tutorial.model.Item;
+import com.perrinjp.tutorial.service.ItemService;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

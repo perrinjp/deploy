@@ -1,4 +1,4 @@
-package com.eddytnk.springbootconcourse.springbootconcourse;
+package com.perrinjp.springboot.concourse;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
